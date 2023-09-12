@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Tailus</title>
+  </head>
+  <body class="h-screen flex items-center overflow-hidden">
+    <div class="absolute inset-0 w-full h-full">
+      <img
+        id="background"
+        src="../public/images/thumbnail_image3.jpg"
+        class="w-full h-screen object-cover transition duration-300"
+        alt=""
+      />
+    </div>
+
+    <div class="m-auto px-6 sm:px-0 sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-4/12">
+      <div class="relative group w-full h-64 flex items-center justify-center">
+        <div
+          class="absolute inset-0 w-full h-full rounded-xl bg-white bg-opacity-80 backdrop-blur-xl group-hover:bg-opacity-70 shadow-2xl group-hover:scale-110 transition duration-300"
+        >
+          <!-- <input
+            type="file"
+            name="bgfile"
+            id="bgfile"
+            accept=".jpeg, .jpg, .png, .webp .svg"
+            class="relative z-10 opacity-0 w-full h-full cursor-pointer"
+          /> -->
+          <input
+            accept=".jpg, .jpeg .png, .svg, .webp"
+            class="relative z-10 opacity-0 h-full w-full cursor-pointer"
+            type="file"
+            name="bgfile"
+            id="bgfile"
+          />
+          <div
+            class="absolute inset-0 w-full h-hull flex items-center justify-center m-auto"
+          >
+            <div class="space-y-6 text-center">
+              <img
+                src="../public/images/thumbnail_image3-removebg-preview.png"
+                alt="file upload illustration"
+                class="w-32 m-auto sm:w-40"
+              />
+              <p class="text-gray-700 text-lg text-center">
+                <span class="block">Drag and drop a file or </span>
+                <label for="bgfile" class="text-blue-600"
+                  >click to upload</label
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../build/background.js"></script>
+  </body>
+</html>
